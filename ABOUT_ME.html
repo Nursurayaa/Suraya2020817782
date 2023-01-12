@@ -1,0 +1,224 @@
+<html>
+<head>
+<link href="assest/css/Style1.css" rel="stylesheet">
+<title>ABOUT ME</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+
+
+<!---label--->
+
+<center><a href="index.html"><img src="assest/image/myresume.png" height="20%" width="30%"></a></center>
+
+<!---navigation--->
+
+<div class="navbar">
+  <a href="ABOUT_ME.html">About</a> 
+  <a href="EDUCATION.html">Education</a> 
+  <a href="EXPERIENCE.html">Experience</a> 
+  <a href="GALLERY.html">Gallery</a>
+</div>
+
+<!---top image--->
+
+<img src="assest/image/imagepink.png" height="80%" width="100%">
+
+<br><br><br>
+
+<!---RESUME DETAIL--->
+
+
+<div class="c">
+<br>
+<b>SITI NURSURAYA BINTI ZALEHAN</b>
+
+
+</div>
+
+<div class="d">
+<img src="assest/image/main_image.png" width="53%" height="77%">
+</div></div class="d">
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
+
+<!---ABOUT--->
+
+<center>
+<div class="g">
+  <img src="assest/image/about.png" height="15%" weidth="15%">
+<br>
+    <div class="f" >A 20 years old student who is looking forward for her future. Having both practical and soft skills that applicable to most of all work requirements in today's industry. Easily adapt to new environment as well as operation. A student with various of ideas that may contribute to the spark of plans. Having experiences in business practical and knowledge in records management theory.</div>
+
+
+</div>
+<br><br><br><br>
+
+<!---INTEREST--->
+
+<div class="i">
+  <center><img src="assest/image/interest.png" height="15%" weidth="15%"></center>
+</div>
+
+<div class="h">
+
+<button class="accordion">Photography</button>
+
+    <div class="panel">
+      <p text align="justify">Photography always be my interest since highschool, having a photographer friend also is one of the reasons why I love this field. Even though I am not a professional photographer and did not attend any photography class, with helps from my friends, I am able to slowly polish my skill in capturing photo and editing.</p>
+</div>
+
+<button class="accordion">Sport</button>
+
+<div class="panel">
+  <p text align="justify">In my highschool, I joined school's hockey team and police cadet as my extra cu-curicular activity which involve sport and contributes to my school reputation and represents state in police cadet.</p>
+</div>
+
+<button class="accordion">Pop & Ballad Songs</button>
+
+<div class="panel">
+  <p text align="justify">To be specific, pop songs always been my addiction compared to rock genre. There are certain singers I'd love to listen to such as Olivia Rodrigo, Taylor Swift, BTS, and and Keshi.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+<!---FAVOURITE--->
+
+<div class="e">
+  <img src="assest/image/favourite.png" height="15%" weidth="15%"> 
+       <br>
+       <div class="b">BTS Festa 2021</div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/RRhjdYsNwAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><br>
+<div class="b">Just for a Moment - Olivia Rodrigo & Joshua Basset</div>
+      <video width="550" controls>
+       <source src="assest/video/moment.mp4" type="video/mp4">
+      </video>
+      <br><br>
+<div class="b">All Too Well (<i>Taylor's Version</i>) - Taylor Swift</div>
+<audio controls>
+    <source src="assest/audio/All Too Well.mp3" type="audio/mp3">
+   </audio>
+<br><br>
+      <button class="button" style="vertical-align:middle"><span><a href="https://youtube.com/playlist?list=PLkEFXJjoZqcmDqbAhWdQv88J98v2eVS66">More</a></span></button>
+  
+</div>
+</center>  
+
+
+</center>
+<!---button to top--->
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+
+<footer>
+
+<div class="footer">
+
+<marquee behavior="scroll" direction="left" scrollamount="12">
+    <i>In the end, it's not the years in your life that count.It's the life in your years.</i>
+</marquee>
+
+<center>
+  <br>Turning 21 in
+<center><p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 2,2023 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</center>
+
+
+<hr style="width:50%;">
+
+
+<center>
+   <a href="https://wa.me/60165589608"><img src="assest/image/ws.png" height="12% weidth="12%">
+   <a href="https://www.instagram.com/surayazlhn/?next=%2Finstagram%2F&hl=en"><img src="assest/image/insta.png" height="12% weidth="12%">
+   <a href="https://youtube.com/playlist?list=PLkEFXJjoZqcmDqbAhWdQv88J98v2eVS66"><img src="assest/image/youtube.png" height="12% weidth="12%">
+</center>
+
+</footer>
+
+
+
+
+
+
+
+
+</html>
+
+

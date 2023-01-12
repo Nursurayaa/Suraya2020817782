@@ -1,0 +1,155 @@
+<html>
+<head>
+<link href="assest/css/Style1.css" rel="stylesheet">
+<title>EXPERIENCE</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+
+<!---label--->
+<center><a href="index.html"><img src="assest/image/myresume.png" height="20%" width="30%"></a></center>
+
+<!---navigation--->
+
+<div class="navbar">
+  <a href="ABOUT_ME.html">About</a> 
+  <a href="EDUCATION.html">Education</a> 
+  <a href="EXPERIENCE.html">Experience</a> 
+  <a href="GALLERY.html">Gallery</a>
+</div>
+
+
+<!---Experience 1--->
+
+<div class="j" style="color:black;">
+<center><img src="assest/image/experience.png" height="20%" weidth="20%"></center>
+<br>
+  <b>RESTAURANT WAITER</b>
+<br>2018-2021
+<br>
+    <div class="f" ><p>Part-timer at restaurant during my semester breaks and free time to seek for experiences and work on my social skills while performing duties in serving the customers. Managed to increase my performance day by day with help from colleagues and at the same time self-practice.Prioritize my service quality to ensure the customer satisfaction on the great level which may contribute to the successfulness of the place I work with as well as to achieve my goals.This part time have increased my verbal and inverbal communication which assist me to be more understandable in fulfilling people's requests and running taks in my work place.</p></div>
+
+</div>
+
+
+<!---Experience 2--->
+
+<div class="g">
+  <b>PROGRAM'S SPECIAL DUTIES BUREAU</b>
+<br>2022
+<br>
+    <div class="f" ><p>Part of Information Festival organized by my class under Extension Service subject and in charged of free duties as well as helps other bureaus completing their duties including contacting outsider to join our program, preparing activities' materials as well as being side-photographer on the program day. Other than that, in charge as the usher during the program, responsible in ensuring the program run smoothly by controling the crowd, managing the arrival of vvip guests as well as serving the guests. This program has thought me a lot of things about the process of organizing program and improve my social skills. </p></div>
+</div>
+ 
+
+<!---SKILLS--->
+<div class="vl"></div>
+
+
+<div class="i">
+  <b>SKILLS</b>
+<br>
+<ol>
+  <li>Social communication</li>
+  <li>Marketing</li>
+  <li>Business</li>
+</ol> 
+
+
+    <div class="k">
+<b> SOFTWARES</b>
+<ul>
+  <li>Adobe Illustrator</li>
+  <li>Adobe Photoshop</li>
+  <li>Adobe Animate</li>
+</ul>  
+</div> 
+</div> 
+
+<!---button to top--->
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+</body>
+
+<footer>
+
+<div class="footer">
+  <marquee behavior="scroll" direction="left" scrollamount="12">
+   <i>In the end, it's not the years in your life that count.It's the life in your years.</i>
+  </marquee>
+
+<center>
+<br>Turning 21 in
+<center><p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 2,2023 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</center>
+
+
+<hr style="width:50%;">
+
+
+<center>
+  <a href="https://wa.me/60165589608"><img src="assest/image/ws.png" height="12% weidth="12%">
+  <a href="https://www.instagram.com/surayazlhn/?next=%2Finstagram%2F&hl=en"><img src="assest/image/insta.png" height="12% weidth="12%">
+  <a href="https://youtube.com/playlist?list=PLkEFXJjoZqcmDqbAhWdQv88J98v2eVS66"><img src="assest/image/youtube.png" height="12% weidth="12%">
+</center>
+
+</footer>
+
+</html>

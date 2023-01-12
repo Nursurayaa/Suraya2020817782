@@ -1,0 +1,209 @@
+<html>
+<head>
+<link href="assest/css/Style1.css" rel="stylesheet">
+<title>GALLERY</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+
+
+<!---label--->
+<center><a href="index.html"><img src="assest/image/myresume.png" height="20%" width="30%"></a></center>
+
+<!---navigation--->
+
+<div class="navbar">
+  <a href="ABOUT_ME.html">About</a> 
+  <a href="EDUCATION.html">Education</a> 
+  <a href="EXPERIENCE.html">Experience</a> 
+  <a href="GALLERY.html">Gallery</a>
+</div>
+
+<div class="e">
+<!-- Header -->
+ <div class="header" id="myHeader">
+  <img src="assest/image/minigallery.png">
+   <p style="color:3B3C32;">choose your preference.</p>
+   <button class="btn" onclick="one()">1</button>
+   <button class="btn active" onclick="two()">2</button>
+   <button class="btn" onclick="three()">3</button>
+   <br><br>
+   <audio controls>
+    <source src="assest/audio/butterflyBTS.mp3" type="audio/mp3">
+   </audio>
+  </div>
+ </div>
+
+<!-- Photo Grid -->
+
+<div class="row"> 
+  <div class="column">
+    <img src="assest/image/background1.png" style="width:100%">
+    <img src="assest/image/anis.png" style="width:100%">
+    <img src="assest/image/redflower.png" style="width:100%">    
+    <img src="assest/image/wave.png" style="width:100%">
+    <img src="assest/image/lake.png" style="width:100%">
+    <img src="assest/image/imagebeach.png" style="width:100%">
+    <img src="assest/image/kodak.png" style="width:100%">
+    <img src="assest/image/bukitair.png" style="width:100%">
+    <img src="assest/image/selangor library.png" style="width:100%">
+  </div>
+
+<div class="column">
+    <img src="assest/image/cloud.png" style="width:100%">
+    <img src="assest/image/sucoffee.png" style="width:100%">   
+    <img src="assest/image/handbouquet.png" style="width:100%">
+    <img src="assest/image/bubble.png" style="width:100%">
+    <img src="assest/image/maryam.png" style="width:100%">
+    <img src="assest/image/waterfall.png" style="width:100%">
+    <img src="assest/image/imagedark.png" style="width:100%">
+    <img src="assest/image/buns.png" style="width:100%">
+    <img src="assest/image/gallery.png" style="width:100%">
+    <img src="assest/image/buggy ride.png" style="width:100%">
+</div>  
+
+<div class="column">
+    <img src="assest/image/bird.png" style="width:100%">
+    <img src="assest/image/Farah&Me.png" style="width:100%">
+    <img src="assest/image/skytree.png" style="width:100%">
+    <img src="assest/image/pinktree.png" style="width:100%">
+    <img src="assest/image/fullharmony.png" style="width:100%">
+    <img src="assest/image/rainbow.png" style="width:100%">
+    <img src="assest/image/flower.png" style="width:100%">
+    <img src="assest/image/cat.png" style="width:100%">
+    <img src="assest/image/2coffee.png" style="width:100%">
+</div>
+
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "40%";  // IE10
+    elements[i].style.flex = "40%";
+  }
+}
+
+// Four images side by side
+function three() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+<!---button to top--->
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+</body>
+
+<footer>
+
+<div class="footer">
+  <marquee behavior="scroll" direction="left" scrollamount="12">
+    <i>In the end, it's not the years in your life that count.It's the life in your years.</i>
+  </marquee>
+
+<center>
+  <br>Turning 21 in
+
+<center><p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 2,2023 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</center>
+
+
+<hr style="width:50%;">
+
+
+<center>
+  <a href="https://wa.me/60165589608"><img src="assest/image/ws.png" height="12% weidth="12%">
+  <a href="https://www.instagram.com/surayazlhn/?next=%2Finstagram%2F&hl=en"><img src="assest/image/insta.png" height="12% weidth="12%">
+  <a href="https://youtube.com/playlist?list=PLkEFXJjoZqcmDqbAhWdQv88J98v2eVS66"><img src="assest/image/youtube.png" height="12% weidth="12%">
+</center>
+
+</footer>
+
+
+</html>

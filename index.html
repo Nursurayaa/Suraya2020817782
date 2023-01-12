@@ -1,0 +1,79 @@
+<html>
+<head>
+<link href="assest/css/Style1.css" rel="stylesheet">
+<title>HOME</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+
+<center><a href="index.html"><img src="assest/image/myresume.png" height="20%" width="30%"></a></center>
+
+<!---navigation--->
+
+<div class="navbar">
+  <a href="ABOUT_ME.html">About</a> 
+  <a href="EDUCATION.html">Education</a> 
+  <a href="EXPERIENCE.html">Experience</a> 
+  <a href="GALLERY.html">Gallery</a>
+</div>
+
+<!---button on image--->
+
+
+<div class="container">
+  <a href="ABOUT_ME.html">
+  <img src="assest/image/sugallery.png" alt="sugallery" style="width:100%">
+  <button class="btn"><a href="ABOUT_ME.html">About Me</a></button>
+</div>
+
+
+
+<div class="container">
+  <a href="EDUCATION.html">
+  <img src="assest/image/stamp.png" alt="stamp" style="width:100%">
+  <button class="btn"><a href="EDUCATION.html">Education</a></button>
+</div>
+
+
+
+<div class="container">
+  <img src="assest/image/ayagallery.png" alt="ayagallery" style="width:100%">
+  <button class="btn"><a href="EXPERIENCE.html">Experience</a></button>
+</div>
+
+
+
+<div class="container">
+  <img src="assest/image/frames.png" alt="frame" style="width:100%">
+  <button class="btn"><a href="GALLERY.html">Gallery</a></button>
+</div>
+
+
+<!---button to top--->
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
